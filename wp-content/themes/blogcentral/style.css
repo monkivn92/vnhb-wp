@@ -168,7 +168,7 @@ a img.aligncenter {
  * 3.  Default Style
  *-----------------------------------------------------------------------*/
 a {
-	color: #0071d8;
+	color: #F92672;
 }
 
 a,
@@ -223,7 +223,10 @@ blockquote b {
 
 input:focus,
 textarea:focus {
-	border: 2px solid currentColor;
+	-webkit-box-shadow: 0px 0px 11px 1px rgba(249,38,114,0.4);
+	-moz-box-shadow: 0px 0px 11px 1px rgba(249,38,114,0.4);
+	box-shadow: 0px 0px 11px 1px rgba(249,38,114,0.4);
+	transition:all 0.5s;
 	outline: 0;
 }
 
@@ -1171,7 +1174,7 @@ nav .fa {
 }
 
 .widget a {
-	color: currentColor;
+	color: #F92672;
 }
 
 #recentcomments li a {
@@ -1602,6 +1605,14 @@ span.post-title {
 	line-height: 22px;
 }
 
+#main-posts-cont .cols .post-title a{
+
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 22px;
+	color: #F92672;
+}
+
 /* Post Meta Style, Includes Author, Date, Categories, Tags, Comments Number */
 .post-meta,
 #sidebar-rght .post-date {
@@ -1619,7 +1630,7 @@ span.post-title {
 }
 
 .post-meta a {
-	color: currentColor;
+	color: #F92672;
 }
 
 .post-meta li { 
@@ -1726,14 +1737,9 @@ span.post-title {
 	text-align: center;
 	background-color: #FFF;
 	width: 100%;
-    border: 1px dashed red;
+    border: 1px dashed #F92672;
 }
-.navigation:before{
-	content: 'Chọn số trang';
-}
-.navigation>ul{
-	padding-top: 10px;
-}
+
 .navigation>ul li{
 	padding: 12px;
 }
@@ -1768,7 +1774,7 @@ span.post-title {
  
 .navigation li a:hover,  
 .navigation li.active a {
-	color: red;
+	color: #F92672;
 }
 
 .navigation li a {
@@ -2168,23 +2174,28 @@ span.color-scheme5,
 	margin: 10px 10px 0px 10px; 
 }
 #access ul.menu li a{
-	color: #FFF;
+	color: #f597b9;
 }
-#access li.current_page_item{
+#access li.current_page_item,
+#access li.current-menu-item{
 
-	border: 1px solid #FFF;
+	border: 1px solid #f597b9;
 	
 }
-#access .current_page_item>a{
-	color: #FFF !important;
+#access .current_page_item>a,
+#access li.current-menu-item>a{
+	color:#f597b9 !important;
 }
 #access ul.menu li:hover,
 #access ul.menu li:focus{
-	border: 1px solid #FFF;
+	border: 1px solid #f597b9;
 }
 #access > div > ul > li > a:hover,
 #access > div > ul > li > a:focus{
-	color: #FFF !important;
+	color: #f597b9 !important;
+}
+.widget_nav_menu  .current_page_item > a{
+	color: #f597b9 !important;
 }
 /**
  * 19. Drop Cap
